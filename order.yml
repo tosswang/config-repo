@@ -29,11 +29,11 @@ mybatis:
 #打印SQL，语法logging.level+mapper包全名
 logging:
   level: 
-    com.wangyunfeng.order.mapper: debug
+    com.wzlsunwyf.mapper: debug
     
 eureka:
   instance:
     hostname: localhost
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/    
