@@ -30,13 +30,5 @@ mybatis:
 logging:
   level: 
     com.wzlsunwyf.mapper: debug
-    
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/    
-
 env:
   dev
