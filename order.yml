@@ -1,39 +1,39 @@
-server:
-  port: 8763
-
-spring: 
-  application:
-    name: order
-  datasource:   
-    type: com.alibaba.druid.pool.DruidDataSource
-    #url: jdbc:mysql://127.0.0.1:8066/TESTDB?useUnicode=true&characterEncoding=UTF-8
-    url: jdbc:mysql://127.0.0.1:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-    username: root
-    password: 123456
-    driverClassName: com.mysql.jdbc.Driver
-    testWhileIdle: true
-    testOnBorrow: true
-    validationQuery: SELECT 1 FROM DUAL
-    timeBetweenEvictionRunsMillis: 300000
-    minEvictableIdleTimeMillis: 1800000
-    ###数据源的其他配置,Druid暂时不在Spring Bootz中的直接支持,所以这里显示成了这个样子，要想生效，需要做一个配置类
-    initialSize: 5
-    minIdle: 5
-    maxActive: 20
-    maxWait: 60000
-
-mybatis:
-  type-aliases-package: com.wzlsunwyf.domain 
-  mapper-locations: classpath:mybatis_mapper/*.xml 
-
+#server:
+#  port: 8763
+#
+#spring: 
+#  application:
+#    name: order
+#  datasource:   
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    #url: jdbc:mysql://127.0.0.1:8066/TESTDB?useUnicode=true&characterEncoding=UTF-8
+#    url: jdbc:mysql://127.0.0.1:3306/springcloud?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+#    username: root
+#    password: 123456
+#    driverClassName: com.mysql.jdbc.Driver
+#    testWhileIdle: true
+#    testOnBorrow: true
+#    validationQuery: SELECT 1 FROM DUAL
+#    timeBetweenEvictionRunsMillis: 300000
+#    minEvictableIdleTimeMillis: 1800000
+#    ###数据源的其他配置,Druid暂时不在Spring Bootz中的直接支持,所以这里显示成了这个样子，要想生效，需要做一个配置类
+#    initialSize: 5
+#    minIdle: 5
+#    maxActive: 20
+#    maxWait: 60000
+#
+#mybatis:
+#  type-aliases-package: com.wzlsunwyf.domain 
+#  mapper-locations: classpath:mybatis_mapper/*.xml 
+#
 #打印SQL，语法logging.level+mapper包全名
-logging:
-  level: 
-    com.wzlsunwyf.mapper: debug
-    
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/    
+#logging:
+#  level: 
+#    com.wzlsunwyf.mapper: debug
+#    
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/    
