@@ -24,8 +24,8 @@ spring:
   rabbitmq:
     host: localhost
     port: 5672
-    username: wzlsunwyf
-    password: 19810812@wyf
+    username: guest
+    password: guest
 mybatis:
   type-aliases-package: com.wzlsunwyf.domain 
   mapper-locations: classpath:mybatis_mapper/*.xml 
