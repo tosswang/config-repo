@@ -4,6 +4,11 @@ server:
 spring: 
   application:
     name: order
+  rabbimaq: 
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   datasource:   
     type: com.alibaba.druid.pool.DruidDataSource
     #url: jdbc:mysql://127.0.0.1:8066/TESTDB?useUnicode=true&characterEncoding=UTF-8
