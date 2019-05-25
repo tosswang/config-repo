@@ -21,7 +21,11 @@ spring:
     minIdle: 5
     maxActive: 20
     maxWait: 60000
-
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: wzlsunwyf
+    password: 19810812@wyf
 mybatis:
   type-aliases-package: com.wzlsunwyf.domain 
   mapper-locations: classpath:mybatis_mapper/*.xml 
@@ -31,4 +35,4 @@ logging:
   level: 
     com.wzlsunwyf.mapper: debug
 env:
-  dev5
+  dev
