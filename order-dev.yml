@@ -5,10 +5,10 @@ spring:
   application:
     name: order
   rabbimaq: 
-    host: 127.0.0.1
+    host: localhost
     port: 5672
-    username: guest
-    password: guest
+    username: wzlsunwyf
+    password: 19810812@wyf
   datasource:   
     type: com.alibaba.druid.pool.DruidDataSource
     #url: jdbc:mysql://127.0.0.1:8066/TESTDB?useUnicode=true&characterEncoding=UTF-8
