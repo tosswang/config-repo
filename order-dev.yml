@@ -21,11 +21,6 @@ spring:
     minIdle: 5
     maxActive: 20
     maxWait: 60000
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
 mybatis:
   type-aliases-package: com.wzlsunwyf.domain 
   mapper-locations: classpath:mybatis_mapper/*.xml 
