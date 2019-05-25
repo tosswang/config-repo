@@ -30,4 +30,4 @@ logging:
   level: 
     com.wzlsunwyf.mapper: debug
 env:
-  dev
+  dev2
