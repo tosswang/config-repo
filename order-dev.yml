@@ -7,8 +7,8 @@ spring:
   rabbimaq: 
     host: localhost
     port: 5672
-    username: wzlsunwyf
-    password: 19810812@wyf
+    username: guest
+    password: guest
   datasource:   
     type: com.alibaba.druid.pool.DruidDataSource
     #url: jdbc:mysql://127.0.0.1:8066/TESTDB?useUnicode=true&characterEncoding=UTF-8
